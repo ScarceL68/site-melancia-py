@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+
+    <style>
+        body {
+            background-color: lemonchiffon;
+        }
+        
+        h1{
+            color: crimson;
+            font-size: 100px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        h3{
+            color: darkgreen;
+            font-size: 60px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .nomeVisitante {
+            color: darkred;
+            font-size: 40px;
+        }
+        .botao {
+            height: 40px;
+            width: 180px;
+            background-color: green;
+            color: bisque;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
+        .botao:hover {
+            background-color: greenyellow;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Bem vindo ao meu Site</h1>
+        <h3>Esse site é sobre Melancias saborosas🍉</h3>
+        <p>Bem Vindo</p>
+        <p id="visitante" class="nomeVisitante">Aguardando...</p>
+        <a href="https://brasilescola.uol.com.br/frutas/melancia.htm"><img src="Melância.jpg" alt=""></a>
+        <br>
+        <a href="https://brasilescola.uol.com.br/frutas/melancia.htm">Clique no link</a>
+        <h3>Cadastro</h3>
+        <label>Nome</label>
+        <br>
+        <input type="text">
+        <br>
+        <label>Sobrenome</label>
+        <br>
+        <input type = "text">
+        <br>
+        <br>
+        <button onclick="enviar()" class="botao">Enviar</button>
+
+        <script>
+            function enviar () {
+                alert("Cadastro feito com sucesso!")
+            }
+            
+            var usuario = prompt("Digite seu nome")
+            
+            document.getElementById('visitante').innerHTML = usuario
+        </script>
+    </center>
+</body>
+</html>
